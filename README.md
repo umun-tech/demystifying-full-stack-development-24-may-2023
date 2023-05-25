@@ -1,4 +1,4 @@
-#Demystifying Full Stack Development 👩🏻‍💻
+#  Demystifying Full Stack Development 👩🏻‍💻
 #### Seminar by [Abhinav Singhal](https://twitter.com/umunBeing) at [MIET](http://www.miet.ac.in/) on 24th May 2023.
 
 ![Group Photo](./docs/images/seminar%20group%20photo.jpg)
