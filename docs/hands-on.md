@@ -1,6 +1,6 @@
-#Running the code
+# Running the code
 
-##Prerequisites
+## Prerequisites
 - [NodeJS](https://nodejs.org/en/download/)
 - [Angular CLI](https://angular.io/cli)
 - [MySQL](https://dev.mysql.com/downloads/installer/)
