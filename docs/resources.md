@@ -1,49 +1,49 @@
-#Study Resouces
+# Study Resouces
 
 Here is a list of books, PDFs, and popular YouTube channels in both English and Hindi that can help you along your learning path:
 
 ##Books and PDFs:
 
-###Java:
+### Java:
 
 - "Head First Java" by Kathy Sierra & Bert Bates
 - "Effective Java" by Joshua Bloch
-###Spring Boot:
+### Spring Boot:
 
 - "Spring Boot in Action" by Craig Walls
 - "Spring Microservices in Action" by John Carnell
-###Angular:
+### Angular:
 
 - "Angular: Up and Running: Learning Angular, Step by Step" by Shyam Seshadri
-###TypeScript:
+### TypeScript:
 
 - "Programming TypeScript" by Boris Cherny
 
-##Online Resources (Free PDFs, Tutorials):
+## Online Resources (Free PDFs, Tutorials):
 
 - W3Schools (Java, JavaScript, HTML, CSS, SQL)
 - Mozilla Developer Network (JavaScript, HTML, CSS)
 - TutorialsPoint (Java, Spring, Angular, TypeScript)
 - Spring.io (Official Spring Boot documentation)
 - Angular.io (Official Angular documentation)
-##YouTube Channels (English):
+## YouTube Channels (English):
 
-###Java/Spring Boot:
+### Java/Spring Boot:
 
 - Spring Developer
 - Java Brains
-###Angular/TypeScript:
+### Angular/TypeScript:
 
 - Academind
 - Traversy Media
 - The Net Ninja
-##YouTube Channels (Hindi):
+## YouTube Channels (Hindi):
 
-###Java/Spring Boot:
+### Java/Spring Boot:
 
 - CodeWithHarry
 - Geeky Shows
-###Angular/TypeScript:
+### Angular/TypeScript:
 
 - CodeWithHarry
 - Thapa Technical
