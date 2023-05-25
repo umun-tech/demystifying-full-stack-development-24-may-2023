@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "projects": {
+             "sample-app": {
+      "projectType": "application",
+      "root": "apps/sample-app",
+      "sourceRoot": "apps/sample-app/src",
+      "prefix": "umn",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "outputs": [
+            "{options.outputPath}"
+          ],
+          "options": {
+            "outputPath": "dist/apps/sample-app",
+            "index": "apps/sample-app/src/index.html",
+            "main": "apps/sample-app/src/main.ts",
+            "polyfills": "apps/sample-app/src/polyfills.ts",
+            "tsConfig": "apps/sample-app/tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "apps/sample-app/src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
+            ],
+            "styles": [
+              "apps/sample-app/src/styles.scss",
+              {
+                "input": "apps/sample-app/src/theme/variables.scss"
+              }
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "2mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "apps/sample-app/src/environments/environment.ts",
+                  "with": "apps/sample-app/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "sample-app:build:production"
+            },
+            "development": {
+              "browserTarget": "sample-app:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "sample-app:build"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "apps/sample-app/src/**/*.ts",
+              "apps/sample-app/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+        "sample-lib": {
+      "projectType": "library",
+      "root": "libs/sample-lib",
+      "sourceRoot": "libs/sample-lib/src",
+      "prefix": "umn",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "outputs": [
+            "dist/libs/sample-lib"
+          ],
+          "options": {
+            "project": "libs/sample-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/sample-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "libs/sample-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/sample-lib/src/**/*.ts",
+              "libs/sample-lib/src/**/*.html"
+            ]
+          }
+        }
+      },
+      "tags": []
+    },
+
+  }
+}

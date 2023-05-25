@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <umn-back-button></umn-back-button>
+    <ion-buttons slot="end">
+      <ion-button (click)="saveButtonClicked()">Save</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label>Role</ion-label>
+    <ion-input [(ngModel)]="role"></ion-input>
+  </ion-item>
+</ion-content>

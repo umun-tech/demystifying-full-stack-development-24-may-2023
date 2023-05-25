@@ -1,0 +1,6 @@
+<umn-nav [menuItems]="menuItemsFiltered" [isTabBar]="false" [@rootAnimation]
+         [isShrunk]="false" [isTopBar]="false" [isNotifications]="false" [logoRoundedCorner]="false"
+         class="ion-page" [logoSmall]="logoSmall" [logoCircle]="false" [showSearchbox]="false"
+         [appSubtitle]="selectedOrganization?.name"
+         (onLogoClicked)="logoClicked($event)"
+></umn-nav>

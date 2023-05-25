@@ -1,0 +1,36 @@
+"sample-lib": {
+  "projectType": "library",
+  "root": "libs/sample-lib",
+  "sourceRoot": "libs/sample-lib/src",
+  "prefix": "umn",
+  "architect": {
+    "build": {
+    "builder": "@nrwl/angular:package",
+    "outputs": [
+      "dist/libs/sample-lib"
+    ],
+    "options": {
+     "project": "libs/sample-lib/ng-package.json"
+    },
+    "configurations": {
+    "production": {
+     "tsConfig": "libs/sample-lib/tsconfig.lib.prod.json"
+    },
+    "development": {
+      "tsConfig": "libs/sample-lib/tsconfig.lib.json"
+    }
+    },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+    "builder": "@nrwl/linter:eslint",
+    "options": {
+    "lintFilePatterns": [
+      "libs/sample-lib/src/**/*.ts",
+      "libs/sample-lib/src/**/*.html"
+    ]
+    }
+    }
+  },
+  "tags": []
+},

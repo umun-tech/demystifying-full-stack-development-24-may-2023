@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Sample App</title>
+  <link rel="icon" type="image/x-icon" href="assets/icon.png"/>
+  <script type="application/javascript">
+    setTimeout(()=>{
+      const primaryColor = getComputedStyle(document.body).getPropertyCSSValue('--ion-color-primary').cssText;
+      document.getElementById('loader').style.color = primaryColor;
+      document.getElementsByClassName('progress-value')[0].style.background = primaryColor;
+    }, 50)
+    var global = window;
+    setTimeout(()=>{
+      document.getElementById('loader').style.display = 'none';
+    }, 5000)
+  </script>
+  <base href="/"/>
+
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="msapplication-tap-highlight" content="no"/>
+
+  <link rel="shortcut icon" type="image/png" href="assets/icon/favicon.png"/>
+  <!--  <link rel="manifest" href="assets/manifest.json"/>-->
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <style>
+      .loader img {
+          max-width: 64px;
+          margin-bottom: -20px;
+          padding: 12px;
+      }
+
+      .loader {
+          font-size: 34px;
+          color: #3880ff;
+          width: 380px;
+          margin: 15vh auto;
+          text-align: center;
+      }
+
+      .progress {
+          background: rgba(255,255,255,0.1);
+          justify-content: flex-start;
+          border-radius: 100px;
+          align-items: center;
+          position: relative;
+          /*padding: 0 0 0 5px;*/
+          display: flex;
+          height: 10px;
+          width: 100px;
+          margin: 2vh auto;
+      }
+
+      .progress-value {
+          animation: load 5s normal forwards;
+          box-shadow: 0 10px 4px -10px #fff;
+          border-radius: 100px;
+          background: #3880ff;
+          height: 10px;
+          width: 0;
+      }
+
+      @keyframes load {
+          0% { width: 0; }
+          100% { width: 68%; }
+      }
+
+
+  </style>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+</head>
+
+<body>
+<!--<div class="loader" id="loader">-->
+<!--  <img src="assets/icon.png"> Sample App-->
+<!--  <div class="progress">-->
+<!--    <div class="progress-value"></div>-->
+<!--  </div>-->
+<!--</div>-->
+<sample-app-root></sample-app-root>
+<noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
+</html>

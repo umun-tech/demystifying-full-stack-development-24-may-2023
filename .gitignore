@@ -1,0 +1,6 @@
+/frontend/.angular/
+/frontend/.idea/
+/frontend/node_modules/
+/backend/.idea/
+/backend/sample-app/target/
+/backend/sample-lib/target/

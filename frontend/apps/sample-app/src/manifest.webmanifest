@@ -1,0 +1,17 @@
+{
+  "name": "Sample App",
+  "short_name": "Sample App",
+  "theme_color": "#3880ff",
+  "background_color": "#fafafa",
+  "display": "fullscreen",
+  "scope": "./",
+  "start_url": "./",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+    justify-content: space-between;
+  padding: 16px;
+  background: red;
+  .nav {
+    &:hover {
+      cursor: pointer;
+      color: blue;
+    }
+    color: white;
+    font-weight: bold;
+  }
+
+}

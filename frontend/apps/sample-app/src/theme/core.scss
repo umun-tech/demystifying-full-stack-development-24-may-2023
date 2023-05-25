@@ -1,0 +1,127 @@
+:root {
+
+  ion-modal::part(backdrop) {
+    background-image: url('../assets/login_back.png') !important;
+    --backdrop-opacity: 0.96;
+  }
+
+  .loginContent {
+    background-image: url('../assets/login_back.png') !important;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px var(--ion-card-background) inset !important;
+  }
+
+  .active-item {
+    --ion-text-color: var(--ion-color-primary);
+    color: var(--ion-color-primary) !important;
+  }
+
+
+  .cupertino-pane-wrapper {
+    --cupertino-pane-background: var(--ion-background-color);
+    --cupertino-pane-shadow: #0 4px 16px rgba(var(--ion-color-dark-rgb), .12);
+    --cupertino-pane-move-background: var(--ion-color-medium);
+  }
+
+  --sof-positions-card-margin: 8px;
+
+  ion-modal.fullscreen {
+    --width: 100%;
+    --height: 100%;
+    --border-radius: 0;
+  }
+
+  .ng-select .ng-select-container {
+    --select-background-color: var(--ion-color-light);
+    background-color: var(--select-background-color);
+    color: var(--ion-color-dark);
+    border: none;
+  }
+
+  .ng-select.ng-select-multiple .ng-select-container .ng-value-container .ng-value {
+    background-color: var(--ion-color-light-shade);
+    color: var(--ion-color-dark);
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-right: 8px;
+
+    :hover {
+      background-color: var(--ion-color-dark);
+      color: var(--ion-color-light);
+      border-radius: 4px;
+    }
+
+    .ng-value-icon.left {
+      border-right: 1px solid var(--ion-color-medium)
+    }
+  }
+
+  .ng-dropdown-panel {
+    border: none;
+    background-color: var(--ion-color-light);
+
+    .ng-dropdown-panel-items .ng-option {
+      background-color: var(--ion-color-light);
+      color: var(--ion-color-dark);
+      border: none;
+    }
+
+    .ng-dropdown-panel-items {
+      .ng-option.ng-option-marked {
+        color: var(--ion-color-primary-contrast);
+        background: var(--ion-color-primary);
+      }
+
+      ng-option.ng-option-selected,
+      {
+        color: var(--ion-color-primary-contrast);
+        background: var(--ion-color-primary);
+      }
+    }
+
+    .ng-dropdown-footer {
+      border-top: 0px;
+      padding: 0;
+    }
+  }
+
+  ion-item:focus, ion-button:focus {
+    --background: var(--ion-color-medium);
+  }
+
+  .active-item:focus {
+    --background: var(--ion-color-light);
+  }
+
+  --widget-background: rgba(var(--ion-color-light-rgb), 0.5);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  .ion-color-light {
+    --ion-color-shade: var(--ion-color-light-tint) !important;
+  }
+  :root {
+    --widget-background: rgba(var(--ion-color-light-rgb), 0.1);
+  }
+}
+
+body {
+  --side-bar-background: var(--ion-color-light);
+  --positions-background: var(--ion-color-light);
+  background-color: var(--ion-color-light);
+}
+
+ion-popover.organizationSelectorComponent {
+  --min-width: 400px !important;
+}

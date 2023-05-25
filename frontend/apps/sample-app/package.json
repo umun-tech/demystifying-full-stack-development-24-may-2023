@@ -1,0 +1,9 @@
+{
+  "name": "Sample App",
+  "devDependencies": {
+    "@capacitor/cli": "^4.3.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^4.3.0"
+  }
+}
