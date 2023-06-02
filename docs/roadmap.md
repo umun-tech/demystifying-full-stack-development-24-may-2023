@@ -25,6 +25,7 @@ Becoming a full-stack developer is a journey that requires a broad understanding
 Functional Programming: Lambdas and Streams.
 - Concurrency: Threads, synchronization, and locks.
 - Collections: List, Map, Set, Queue, etc.
+- Generics and Templates
 - Error Handling: Exception types, try-catch blocks.
 ### 2. Database
 
